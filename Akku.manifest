@@ -2,8 +2,8 @@
 (import (akku format manifest))
 
 (akku-package ("chez-glew" "1.0.0-alpha.0")
-  (synopsis "I did not edit Akku.manifest")
-  (authors "Guy Q. Schemer")
+  (synopsis "Chez Scheme bindings for chez-gl")
+  (authors "Julian Herrera")
   (license "MIT")
   (depends ("chez-gl" "^1.0.0") ("chez-srfi" ">=0.0.0-akku <1.0.0"))
 )

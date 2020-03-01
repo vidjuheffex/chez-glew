@@ -1,0 +1,3 @@
+* Chez-Glew
+
+This is a work in progress library to provided Chez Scheme bindings for GLEW.
