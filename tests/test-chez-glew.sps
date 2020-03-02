@@ -22,4 +22,8 @@
 (test-equal (glewGetErrorString 0) "No error")
 (test-end)
 
+(test-begin "glCreateShader succeeds")
+(test-assert (integer? (glCreateShader GL_VERTEX_SHADER)))
+(test-end)
+
 (exit (if (zero? (test-runner-fail-count (test-runner-get))) 0 1))
