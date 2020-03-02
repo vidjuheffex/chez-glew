@@ -4,10 +4,22 @@
 ;; SPDX-License-Identifier: MIT
 #!r6rs
 
-(import (rnrs (6)) (srfi :64 testing) (chez-glew))
+(import (rnrs (6)) (srfi :64 testing) (glew)(glut))
 
-(test-begin "hello")
-(test-equal "Hello World!" (hello "World"))
+;; GLEW requires an openGL context to initialize.
+(glutInit '() 0)
+(glutCreateWindow "glut-test")
+
+(test-begin "glewInit succeeds")
+(test-equal 0 (glewInit))
+(test-end)
+
+(test-begin "glewIsSupported returns an integer")
+(test-assert (integer?  (glewIsSupported "GL_VERSION_1_3")))
+(test-end)
+
+(test-begin "glewGetErrorString returns string")
+(test-equal (glewGetErrorString 0) "No error")
 (test-end)
 
 (exit (if (zero? (test-runner-fail-count (test-runner-get))) 0 1))
