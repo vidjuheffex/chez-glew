@@ -17,7 +17,7 @@
           GLEW_VERSION_MINOR
           GLEW_VERSION_MICRO
           glAttachShader
-          ;; Core
+          ;; GL_VERSION_1_1
           GL_ZERO 
           GL_FALSE 
           GL_LOGIC_OP 
@@ -553,6 +553,343 @@
           GL_ALL_ATTRIB_BITS 
           GL_CLIENT_ALL_ATTRIB_BITS
 
+          glAccum
+          glAlphaFunc
+          glAreTexturesResident
+          glArrayElement
+          glBegin
+          glBindTexture
+          glBitmap
+          glBlendFunc
+          glCallList
+          glCallLists
+          glClear
+          glClearAccum
+          glClearColor
+          glClearDepth
+          glClearIndex
+          glClearStencil
+          glClipPlane
+          glColor3b
+          glColor3bv
+          glColor3d
+          glColor3dv
+          glColor3f
+          glColor3fv
+          glColor3i
+          glColor3iv
+          glColor3s
+          glColor3sv
+          glColor3ub
+          glColor3ubv
+          glColor3ui
+          glColor3uiv
+          glColor3us
+          glColor3usv
+          glColor4b
+          glColor4bv
+          glColor4d
+          glColor4dv
+          glColor4f
+          glColor4fv
+          glColor4i
+          glColor4iv
+          glColor4s
+          glColor4sv
+          glColor4ub
+          glColor4ubv
+          glColor4ui
+          glColor4uiv
+          glColor4us
+          glColor4usv
+          glColorMask
+          glColorMaterial
+          glColorPointer
+          glCopyPixels
+          glCopyTexImage1D
+          glCopyTexImage2D
+          glCopyTexSubImage1D
+          glCopyTexSubImage2D
+          glCullFace
+          glDeleteLists
+          glDeleteTextures
+          glDepthFunc
+          glDepthMask
+          glDepthRange
+          glDisable
+          glDisableClientState
+          glDrawArrays
+          glDrawBuffer
+          glDrawElements
+          glDrawPixels
+          glEdgeFlag
+          glEdgeFlagPointer
+          glEdgeFlagv
+          glEnable
+          glEnableClientState
+          glEnd
+          glEndList
+          glEvalCoord1d
+          glEvalCoord1dv
+          glEvalCoord1f
+          glEvalCoord1fv
+          glEvalCoord2d
+          glEvalCoord2dv
+          glEvalCoord2f
+          glEvalCoord2fv
+          glEvalMesh1
+          glEvalMesh2
+          glEvalPoint1
+          glEvalPoint2
+          glFeedbackBuffer
+          glFinish
+          glFlush
+          glFogf
+          glFogfv
+          glFogi
+          glFogiv
+          glFrontFace
+          glFrustum
+          glGenLists
+          glGenTextures
+          glGetBooleanv
+          glGetClipPlane
+          glGetDoublev
+          glGetError
+          glGetFloatv
+          glGetIntegerv
+          glGetLightfv
+          glGetLightiv
+          glGetMapdv
+          glGetMapfv
+          glGetMapiv
+          glGetMaterialfv
+          glGetMaterialiv
+          glGetPixelMapfv
+          glGetPixelMapuiv
+          glGetPixelMapusv
+          glGetPointerv
+          glGetPolygonStipple
+          glGetString
+          glGetTexEnvfv
+          glGetTexEnviv
+          glGetTexGendv
+          glGetTexGenfv
+          glGetTexGeniv
+          glGetTexImage
+          glGetTexLevelParameterfv
+          glGetTexLevelParameteriv
+          glGetTexParameterfv
+          glGetTexParameteriv
+          glHint
+          glIndexMask
+          glIndexPointer
+          glIndexd
+          glIndexdv
+          glIndexf
+          glIndexfv
+          glIndexi
+          glIndexiv
+          glIndexs
+          glIndexsv
+          glIndexub
+          glIndexubv
+          glInitNames
+          glInterleavedArrays
+          glIsEnabled
+          glIsList
+          glIsTexture
+          glLightModelf
+          glLightModelfv
+          glLightModeli
+          glLightModeliv
+          glLightf
+          glLightfv
+          glLighti
+          glLightiv
+          glLineStipple
+          glLineWidth
+          glListBase
+          glLoadIdentity
+          glLoadMatrixd
+          glLoadMatrixf
+          glLoadName
+          glLogicOp
+          glMap1d
+          glMap1f
+          glMap2d
+          glMap2f
+          glMapGrid1d
+          glMapGrid1f
+          glMapGrid2d
+          glMapGrid2f
+          glMaterialf
+          glMaterialfv
+          glMateriali
+          glMaterialiv
+          glMatrixMode
+          glMultMatrixd
+          glMultMatrixf
+          glNewList
+          glNormal3b
+          glNormal3bv
+          glNormal3d
+          glNormal3dv
+          glNormal3f
+          glNormal3fv
+          glNormal3i
+          glNormal3iv
+          glNormal3s
+          glNormal3sv
+          glNormalPointer
+          glOrtho
+          glPassThrough
+          glPixelMapfv
+          glPixelMapuiv
+          glPixelMapusv
+          glPixelStoref
+          glPixelStorei
+          glPixelTransferf
+          glPixelTransferi
+          glPixelZoom
+          glPointSize
+          glPolygonMode
+          glPolygonOffset
+          glPolygonStipple
+          glPopAttrib
+          glPopClientAttrib
+          glPopMatrix
+          glPopName
+          glPrioritizeTextures
+          glPushAttrib
+          glPushClientAttrib
+          glPushMatrix
+          glPushName
+          glRasterPos2d
+          glRasterPos2dv
+          glRasterPos2f
+          glRasterPos2fv
+          glRasterPos2i
+          glRasterPos2iv
+          glRasterPos2s
+          glRasterPos2sv
+          glRasterPos3d
+          glRasterPos3dv
+          glRasterPos3f
+          glRasterPos3fv
+          glRasterPos3i
+          glRasterPos3iv
+          glRasterPos3s
+          glRasterPos3sv
+          glRasterPos4d
+          glRasterPos4dv
+          glRasterPos4f
+          glRasterPos4fv
+          glRasterPos4i
+          glRasterPos4iv
+          glRasterPos4s
+          glRasterPos4sv
+          glReadBuffer
+          glReadPixels
+          glRectd
+          glRectdv
+          glRectf
+          glRectfv
+          glRecti
+          glRectiv
+          glRects
+          glRectsv
+          glRenderMode
+          glRotated
+          glRotatef
+          glScaled
+          glScalef
+          glScissor
+          glSelectBuffer
+          glShadeModel
+          glStencilFunc
+          glStencilMask
+          glStencilOp
+          glTexCoord1d
+          glTexCoord1dv
+          glTexCoord1f
+          glTexCoord1fv
+          glTexCoord1i
+          glTexCoord1iv
+          glTexCoord1s
+          glTexCoord1sv
+          glTexCoord2d
+          glTexCoord2dv
+          glTexCoord2f
+          glTexCoord2fv
+          glTexCoord2i
+          glTexCoord2iv
+          glTexCoord2s
+          glTexCoord2sv
+          glTexCoord3d
+          glTexCoord3dv
+          glTexCoord3f
+          glTexCoord3fv
+          glTexCoord3i
+          glTexCoord3iv
+          glTexCoord3s
+          glTexCoord3sv
+          glTexCoord4d
+          glTexCoord4dv
+          glTexCoord4f
+          glTexCoord4fv
+          glTexCoord4i
+          glTexCoord4iv
+          glTexCoord4s
+          glTexCoord4sv
+          glTexCoordPointer
+          glTexEnvf
+          glTexEnvfv
+          glTexEnvi
+          glTexEnviv
+          glTexGend
+          glTexGendv
+          glTexGenf
+          glTexGenfv
+          glTexGeni
+          glTexGeniv
+          glTexImage1D
+          glTexImage2D
+          glTexParameterf
+          glTexParameterfv
+          glTexParameteri
+          glTexParameteriv
+          glTexSubImage1D
+          glTexSubImage2D
+          glTranslated
+          glTranslatef
+          glVertex2d
+          glVertex2dv
+          glVertex2f
+          glVertex2fv
+          glVertex2i
+          glVertex2iv
+          glVertex2s
+          glVertex2sv
+          glVertex3d
+          glVertex3dv
+          glVertex3f
+          glVertex3fv
+          glVertex3i
+          glVertex3iv
+          glVertex3s
+          glVertex3sv
+          glVertex4d
+          glVertex4dv
+          glVertex4f
+          glVertex4fv
+          glVertex4i
+          glVertex4iv
+          glVertex4s
+          glVertex4sv
+          glVertexPointer
+          glViewport
+
           ;; Open GL 2.0
           GL_VERSION_2_0 
           GL_BLEND_EQUATION_RGB 
@@ -813,7 +1150,7 @@
           GL_WRAP_BORDER 
           GL_REPLICATE_BORDER 
           GL_CONVOLUTION_BORDER_COLOR 
-)
+          )
   (import (chezscheme))
 
   (define lib-name
@@ -831,6 +1168,8 @@
        (define name
          (foreign-procedure (symbol->string 'name) args ret)))))
 
+  ;; GL_VERSION_1_1
+  
   (define GL_ZERO 0)
   (define GL_FALSE 0)
   (define GL_LOGIC_OP #x0BF1)
@@ -1366,7 +1705,345 @@
   (define GL_ALL_ATTRIB_BITS #x000fffff)
   (define GL_CLIENT_ALL_ATTRIB_BITS #xffffffff)
 
-    ;; GL_ARB_Imaging
+  (define-function void glAccum (int float))
+  (define-function void glAlphaFunc (int float))
+  (define-function int glAreTexturesResident (int int int))
+  (define-function void glArrayElement (int))
+  (define-function void glBegin (int))
+  (define-function void glBindTexture (int int))
+  (define-function void glBitmap (int int   float float float int))
+  (define-function void glBlendFunc (int int))
+  (define-function void glCallList (int))
+  ;;(define-function void glCallLists (int int const void *lists))
+  ;;(define-function void glClear (GLbitfield mask))
+  (define-function void glClearAccum (float float float float))
+  (define-function void glClearColor (float float float float))
+  (define-function void glClearDepth (double))
+  (define-function void glClearIndex (float))
+  (define-function void glClearStencil (int))
+  (define-function void glClipPlane (int double))
+  (define-function void glColor3b (int int int))
+  (define-function void glColor3bv (const int))
+  (define-function void glColor3d (double double double))
+  (define-function void glColor3dv (double))
+  (define-function void glColor3f (float float float))
+  (define-function void glColor3fv (float))
+  (define-function void glColor3i (int int int))
+  (define-function void glColor3iv (int))
+  (define-function void glColor3s (int int int))
+  (define-function void glColor3sv (int))
+  (define-function void glColor3ub (int int int))
+  (define-function void glColor3ubv (int))
+  (define-function void glColor3ui (int int int))
+  (define-function void glColor3uiv (int))
+  (define-function void glColor3us (int int int))
+  (define-function void glColor3usv (const int))
+  (define-function void glColor4b (int int int int))
+  (define-function void glColor4bv (const int))
+  (define-function void glColor4d (double double double double))
+  (define-function void glColor4dv (double))
+  (define-function void glColor4f (float float float float))
+  (define-function void glColor4fv (float))
+  (define-function void glColor4i (int int int int))
+  (define-function void glColor4iv (int))
+  (define-function void glColor4s (int int int int))
+  (define-function void glColor4sv (int))
+  (define-function void glColor4ub (int int int int))
+  (define-function void glColor4ubv (int))
+  (define-function void glColor4ui (int int int int))
+  (define-function void glColor4uiv (int))
+  (define-function void glColor4us (int int int int))
+  (define-function void glColor4usv (int))
+  (define-function void glColorMask (int int int int))
+  (define-function void glColorMaterial (int int))
+  ;; (define-function void glColorPointer (int int int const void *pointer))
+  (define-function void glCopyPixels (int int int int int))
+  (define-function void glCopyTexImage1D (int int int int int int int))
+  (define-function void glCopyTexImage2D (int int int int int int int int))
+  (define-function void glCopyTexSubImage1D (int int int int int int))
+  (define-function void glCopyTexSubImage2D (int int int int int int int int))
+  (define-function void glCullFace (int))
+  (define-function void glDeleteLists (int int))
+  ;;(define-function void glDeleteTextures (int const GLuint *textures))
+  (define-function void glDepthFunc (int))
+  (define-function void glDepthMask (GLboolean flag))
+  (define-function void glDepthRange (double double))
+  (define-function void glDisable (int))
+  (define-function void glDisableClientState (int))
+  (define-function void glDrawArrays (int int int))
+  (define-function void glDrawBuffer (int))
+  (define-function void glDrawElements (int int int const void *indices))
+  (define-function void glDrawPixels (int int int int const void *pixels))
+  (define-function void glEdgeFlag (GLboolean flag))
+  (define-function void glEdgeFlagPointer (int const void *pointer))
+  (define-function void glEdgeFlagv (const GLboolean *flag))
+  (define-function void glEnable (int))
+  (define-function void glEnableClientState (int))
+  (define-function void glEnd (void))
+  (define-function void glEndList (void))
+  (define-function void glEvalCoord1d (double))
+  (define-function void glEvalCoord1dv (double))
+  (define-function void glEvalCoord1f (float))
+  (define-function void glEvalCoord1fv (float))
+  (define-function void glEvalCoord2d (double double))
+  (define-function void glEvalCoord2dv (double))
+  (define-function void glEvalCoord2f (float float))
+  (define-function void glEvalCoord2fv (float))
+  (define-function void glEvalMesh1 (int int int))
+  (define-function void glEvalMesh2 (int int int int int))
+  (define-function void glEvalPoint1 (int))
+  (define-function void glEvalPoint2 (int int))
+  (define-function void glFeedbackBuffer (int int float))
+  (define-function void glFinish (void))
+  (define-function void glFlush (void))
+  (define-function void glFogf (int float))
+  (define-function void glFogfv (int float))
+  (define-function void glFogi (int int))
+  ;; (define-function void glFogiv (int const GLint *params))
+  (define-function void glFrontFace (int))
+  (define-function void glFrustum (double double double double double double))
+  (define-function  GLAPIENTRY glGenLists (int))
+  ;; (define-function void glGenTextures (int GLuint *textures))
+  ;; (define-function void glGetBooleanv (int GLboolean *params))
+  (define-function void glGetClipPlane (int double))
+  (define-function void glGetDoublev (int double))
+  ;;(define-function   glGetError (void))
+  (define-function void glGetFloatv (int float))
+  ;;(define-function void glGetIntegerv (int GLint *params))
+  (define-function void glGetLightfv (int int float))
+  ;;(define-function void glGetLightiv (int int GLint *params))
+  (define-function void glGetMapdv (int int double))
+  (define-function void glGetMapfv (int int float))
+  ;;(define-function void glGetMapiv (int int GLint *v))
+  (define-function void glGetMaterialfv (int int float))
+  ;;(define-function void glGetMaterialiv (int int GLint *params))
+  (define-function void glGetPixelMapfv (int float))
+  ;;(define-function void glGetPixelMapuiv (int GLuint *values))
+  (define-function void glGetPixelMapusv (int int))
+  ;;(define-function void glGetPointerv (int void* *params))
+  (define-function void glGetPolygonStipple (int))
+  (define-function int glGetString (int))
+  (define-function void glGetTexEnvfv (int int float))
+  (define-function void glGetTexEnviv (int int int))
+  (define-function void glGetTexGendv (int int double))
+  (define-function void glGetTexGenfv (int int float))
+  (define-function void glGetTexGeniv (int int int))
+  ;;(define-function void glGetTexImage (int int int int void *pixels))
+  (define-function void glGetTexLevelParameterfv (int int int float))
+  ;;(define-function void glGetTexLevelParameteriv (int int int GLint *params))
+  (define-function void glGetTexParameterfv (int int float))
+  ;;(define-function void glGetTexParameteriv (int int GLint *params))
+  (define-function void glHint (int int))
+  (define-function void glIndexMask (int))
+  ;;(define-function void glIndexPointer (int int const void *pointer))
+  (define-function void glIndexd (double))
+  (define-function void glIndexdv (double))
+  (define-function void glIndexf (float))
+  (define-function void glIndexfv (float))
+  (define-function void glIndexi (int))
+  (define-function void glIndexiv (int))
+  (define-function void glIndexs (int))
+  (define-function void glIndexsv (int))
+  (define-function void glIndexub (int))
+  (define-function void glIndexubv (int))
+  (define-function void glInitNames (void))
+  ;;(define-function void glInterleavedArrays (int int const void *pointer))
+  (define-function  GLAPIENTRY glIsEnabled (int))
+  (define-function  GLAPIENTRY glIsList (int))
+  (define-function  GLAPIENTRY glIsTexture (int))
+  (define-function void glLightModelf (int float))
+  (define-function void glLightModelfv (int float))
+  (define-function void glLightModeli (int int))
+  (define-function void glLightModeliv (int int))
+  (define-function void glLightf (int int float))
+  (define-function void glLightfv (int int float))
+  (define-function void glLighti (int int int))
+  (define-function void glLightiv (int int int))
+  (define-function void glLineStipple (int int))
+  (define-function void glLineWidth (float))
+  (define-function void glListBase (int))
+  (define-function void glLoadIdentity (void))
+  (define-function void glLoadMatrixd (double))
+  (define-function void glLoadMatrixf (float))
+  (define-function void glLoadName (int))
+  (define-function void glLogicOp (int))
+  (define-function void glMap1d (int double double int int double))
+  (define-function void glMap1f (int float float int int float))
+  (define-function void glMap2d (int double double int int double double int int double))
+  (define-function void glMap2f (int float float int int float float int int float))
+  (define-function void glMapGrid1d (int double double))
+  (define-function void glMapGrid1f (int float float))
+  (define-function void glMapGrid2d (int double double int double double))
+  (define-function void glMapGrid2f (int float float int float float))
+  (define-function void glMaterialf (int int float))
+  (define-function void glMaterialfv (int int float))
+  (define-function void glMateriali (int int int))
+  (define-function void glMaterialiv (int int int))
+  (define-function void glMatrixMode (int))
+  (define-function void glMultMatrixd (double))
+  (define-function void glMultMatrixf (float))
+  (define-function void glNewList (int int))
+  (define-function void glNormal3b (int int int))
+  (define-function void glNormal3bv (int))
+  (define-function void glNormal3d (double double double))
+  (define-function void glNormal3dv (double))
+  (define-function void glNormal3f (float float float))
+  (define-function void glNormal3fv (float))
+  (define-function void glNormal3i (int int int))
+  (define-function void glNormal3iv (int))
+  (define-function void glNormal3s (int int int))
+  (define-function void glNormal3sv (int))
+  ;;(define-function void glNormalPointer (int int const void *pointer))
+  (define-function void glOrtho (double double double double double double))
+  (define-function void glPassThrough (float))
+  (define-function void glPixelMapfv (int int float))
+  (define-function void glPixelMapuiv (int int intalues))
+  (define-function void glPixelMapusv (int int int))
+  (define-function void glPixelStoref (int float))
+  (define-function void glPixelStorei (int int))
+  (define-function void glPixelTransferf (int float))
+  (define-function void glPixelTransferi (int int))
+  (define-function void glPixelZoom (float float))
+  (define-function void glPointSize (float))
+  (define-function void glPolygonMode (int int))
+  (define-function void glPolygonOffset (float float))
+  (define-function void glPolygonStipple (int))
+  (define-function void glPopAttrib (void))
+  (define-function void glPopClientAttrib (void))
+  (define-function void glPopMatrix (void))
+  (define-function void glPopName (void))
+  (define-function void glPrioritizeTextures (int int const float))
+  (define-function void glPushAttrib (GLbitfield mask))
+  (define-function void glPushClientAttrib (GLbitfield mask))
+  (define-function void glPushMatrix (void))
+  (define-function void glPushName (int))
+  (define-function void glRasterPos2d (double double))
+  (define-function void glRasterPos2dv (double))
+  (define-function void glRasterPos2f (float float))
+  (define-function void glRasterPos2fv (float))
+  (define-function void glRasterPos2i (int int))
+  (define-function void glRasterPos2iv (int))
+  (define-function void glRasterPos2s (int int))
+  (define-function void glRasterPos2sv (int))
+  (define-function void glRasterPos3d (double double double))
+  (define-function void glRasterPos3dv (double))
+  (define-function void glRasterPos3f (float float float))
+  (define-function void glRasterPos3fv (float))
+  (define-function void glRasterPos3i (int int int))
+  (define-function void glRasterPos3iv (int))
+  (define-function void glRasterPos3s (int int int))
+  (define-function void glRasterPos3sv (int))
+  (define-function void glRasterPos4d (double double double double))
+  (define-function void glRasterPos4dv (double))
+  (define-function void glRasterPos4f (float float float float))
+  (define-function void glRasterPos4fv (float))
+  (define-function void glRasterPos4i (int int int int))
+  (define-function void glRasterPos4iv (int))
+  (define-function void glRasterPos4s (int int int int))
+  (define-function void glRasterPos4sv (int))
+  (define-function void glReadBuffer (int))
+  ;;(define-function void glReadPixels (int int int int int int void *pixels))
+  (define-function void glRectd (double double double double))
+  (define-function void glRectdv (double double))
+  (define-function void glRectf (float float float float))
+  (define-function void glRectfv (float float))
+  (define-function void glRecti (int int int int))
+  (define-function void glRectiv (int int))
+  (define-function void glRects (int int int int))
+  (define-function void glRectsv (int int))
+  (define-function  GLAPIENTRY glRenderMode (int))
+  (define-function void glRotated (double double double double))
+  (define-function void glRotatef (float float float float))
+  (define-function void glScaled (double double double))
+  (define-function void glScalef (float float float))
+  (define-function void glScissor (int int int int))
+  (define-function void glSelectBuffer (int int))
+  (define-function void glShadeModel (int))
+  (define-function void glStencilFunc (int int int))
+  (define-function void glStencilMask (int))
+  (define-function void glStencilOp (int int int))
+  (define-function void glTexCoord1d (double))
+  (define-function void glTexCoord1dv (double))
+  (define-function void glTexCoord1f (float))
+  (define-function void glTexCoord1fv (float))
+  (define-function void glTexCoord1i (int))
+  (define-function void glTexCoord1iv (int))
+  (define-function void glTexCoord1s (int))
+  (define-function void glTexCoord1sv (int))
+  (define-function void glTexCoord2d (double double))
+  (define-function void glTexCoord2dv (double))
+  (define-function void glTexCoord2f (float float))
+  (define-function void glTexCoord2fv (float))
+  (define-function void glTexCoord2i (int int))
+  (define-function void glTexCoord2iv (int))
+  (define-function void glTexCoord2s (int int))
+  (define-function void glTexCoord2sv (int))
+  (define-function void glTexCoord3d (double double double))
+  (define-function void glTexCoord3dv (double))
+  (define-function void glTexCoord3f (float float float))
+  (define-function void glTexCoord3fv (float))
+  (define-function void glTexCoord3i (int int int))
+  (define-function void glTexCoord3iv (int))
+  (define-function void glTexCoord3s (int int int))
+  (define-function void glTexCoord3sv (int))
+  (define-function void glTexCoord4d (double double double double))
+  (define-function void glTexCoord4dv (double))
+  (define-function void glTexCoord4f (float float float float))
+  (define-function void glTexCoord4fv (float))
+  (define-function void glTexCoord4i (int int int int))
+  (define-function void glTexCoord4iv (int))
+  (define-function void glTexCoord4s (int int int int))
+  (define-function void glTexCoord4sv (int))
+  ;;(define-function void glTexCoordPointer (int int int const void *pointer))
+  (define-function void glTexEnvf (int int float))
+  (define-function void glTexEnvfv (int int float))
+  (define-function void glTexEnvi (int int int))
+  (define-function void glTexEnviv (int int int))
+  (define-function void glTexGend (int int double))
+  (define-function void glTexGendv (int int double))
+  (define-function void glTexGenf (int int float))
+  (define-function void glTexGenfv (int int float))
+  (define-function void glTexGeni (int int int))
+  (define-function void glTexGeniv (int int int))
+  ;;(define-function void glTexImage1D (int int int int int int int const void *pixels))
+  ;;(define-function void glTexImage2D (int int int int int int int int const void *pixels))
+  (define-function void glTexParameterf (int int float))
+  (define-function void glTexParameterfv (int int float))
+  (define-function void glTexParameteri (int int int))
+  ;;(define-function void glTexParameteriv (int int const GLint *params))
+  ;;(define-function void glTexSubImage1D (int int int int int int const void *pixels))
+  ;;(define-function void glTexSubImage2D (int int int int int int int int const void *pixels))
+  (define-function void glTranslated (double double double))
+  (define-function void glTranslatef (float float float))
+  (define-function void glVertex2d (double double))
+  (define-function void glVertex2dv (double))
+  (define-function void glVertex2f (float float))
+  (define-function void glVertex2fv (float))
+  (define-function void glVertex2i (int int))
+  (define-function void glVertex2iv (int))
+  (define-function void glVertex2s (int int))
+  (define-function void glVertex2sv (int))
+  (define-function void glVertex3d (double double double))
+  (define-function void glVertex3dv (double))
+  (define-function void glVertex3f (float float float))
+  (define-function void glVertex3fv (float))
+  (define-function void glVertex3i (int int int))
+  (define-function void glVertex3iv (int))
+  (define-function void glVertex3s (int int int))
+  (define-function void glVertex3sv (int))
+  (define-function void glVertex4d (double double double double))
+  (define-function void glVertex4dv (double))
+  (define-function void glVertex4f (float float float float))
+  (define-function void glVertex4fv (float))
+  (define-function void glVertex4i (int int int int))
+  (define-function void glVertex4iv (int))
+  (define-function void glVertex4s (int int int int))
+  (define-function void glVertex4sv (int))
+  ;;(define-function void glVertexPointer (int int int const void *pointer))
+  (define-function void glViewport (int int int int))
+
+
+  ;; GL_ARB_Imaging
   (define GL_ARB_imaging 1)
 
   (define GL_CONSTANT_COLOR #x8001)
