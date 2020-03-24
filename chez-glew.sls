@@ -1,4 +1,4 @@
-;; -*- mode: scheme; coding: utf-8 -*-
+v;; -*- mode: scheme; coding: utf-8 -*-
 ;; Copyright (c) 2020 Julian Herrera
 ;; SPDX-License-Identifier: MIT
 #!r6rs
@@ -17,7 +17,24 @@
           GLEW_VERSION_MINOR
           GLEW_VERSION_MICRO
           glAttachShader
+
+          ;;GL_ARB_VERTEX_ARRAY_OBJECt
+          GL_ARB_vertex_array_object
+          GL_VERTEX_ARRAY_BINDING
+         glBindVertexArray
+ ;;         glDeleteVertexArray
+          glGenVertexArrays
+          ;; glIsVertexArray
+
+          ;;GLEW_ARB_vertex_array_object
+          
           ;; GL_VERSION_1_1
+
+          ;;type
+          GLuint
+
+          ;; variables
+          GL_VERSION_1_1
           GL_ZERO 
           GL_FALSE 
           GL_LOGIC_OP 
@@ -1007,8 +1024,8 @@
           ;; glGetVertexAttribiv
           ;; glIsProgram
           ;; glIsShader
-          ;; glLinkProgram
-          ;; glShaderSource
+          glLinkProgram
+          glShaderSource
           ;; glStencilFuncSeparate
           ;; glStencilMaskSeparate
           ;; glStencilOpSeparate
@@ -1031,7 +1048,7 @@
           ;; glUniformMatrix2fv
           ;; glUniformMatrix3fv
           ;; glUniformMatrix4fv
-          ;; glUseProgram
+          glUseProgram
           ;; glValidateProgram
           ;; glVertexAttrib1d
           ;; glVertexAttrib1dv
@@ -1149,8 +1166,7 @@
           GL_CONSTANT_BORDER 
           GL_WRAP_BORDER 
           GL_REPLICATE_BORDER 
-          GL_CONVOLUTION_BORDER_COLOR 
-          )
+          GL_CONVOLUTION_BORDER_COLOR)
   (import (chezscheme))
 
   (define lib-name
@@ -1158,10 +1174,11 @@
       ((i3le ti3le)      "libGLEW.so")               ; Linux x86
       ((a6le ta6le)      "libGLEW.so")               ; Linux x86_64
       (else
-       (assertion-violation #f "can not locate GLEW library, unkonwn operating system"))))
+       (assertion-violation #f
+                            "can not locate GLEW library, unkonwn operating system"))))
 
   (define lib (load-shared-object lib-name))
-
+  
   (define-syntax define-function
     (syntax-rules ()
       ((_ ret name args)
@@ -1169,7 +1186,25 @@
          (foreign-procedure (symbol->string 'name) args ret)))))
 
   ;; GL_VERSION_1_1
-  
+  (define GL_VERSION_1_1 1)
+
+  (define-ftype
+    (GLenum int)
+    (GLbitfield int)
+    (GLuint unsigned-int) 
+    (GLint int)
+    (GLsizei int)
+    (GLboolean unsigned-8)
+    (GLbyte integer-8)
+    (GLshort short)
+    (GLubyte unsigned-8)
+    (GLushort unsigned-short)
+    (GLulong unsigned-long)
+    (GLfloat float)
+    (GLclampf float)
+    (GLdouble double)
+    (GLclampd double))
+
   (define GL_ZERO 0)
   (define GL_FALSE 0)
   (define GL_LOGIC_OP #x0BF1)
@@ -1705,7 +1740,7 @@
   (define GL_ALL_ATTRIB_BITS #x000fffff)
   (define GL_CLIENT_ALL_ATTRIB_BITS #xffffffff)
 
-  (define-function void glAccum (int float))
+  (define-function void glAccum (GLenum float))
   (define-function void glAlphaFunc (int float))
   (define-function int glAreTexturesResident (int int int))
   (define-function void glArrayElement (int))
@@ -1715,7 +1750,7 @@
   (define-function void glBlendFunc (int int))
   (define-function void glCallList (int))
   (define-function void glCallLists (int int))
-  (define-function void glClear (int))
+  (define-function void glClear (GLbitfield))
   (define-function void glClearAccum (float float float float))
   (define-function void glClearColor (float float float float))
   (define-function void glClearDepth (double))
@@ -1807,7 +1842,7 @@
   (define-function void glGetBooleanv (int int))
   (define-function void glGetClipPlane (int double))
   (define-function void glGetDoublev (int double))
-  (define-function int  glGetError ())
+  (define-function int glGetError ())
   (define-function void glGetFloatv (int float))
   (define-function void glGetIntegerv (int int))
   (define-function void glGetLightfv (int int float))
@@ -1951,7 +1986,7 @@
   (define-function void glRectiv (int int))
   (define-function void glRects (int int int int))
   (define-function void glRectsv (int int))
-  (define-function int  glRenderMode (int))
+  (define-function int glRenderMode (int))
   (define-function void glRotated (double double double double))
   (define-function void glRotatef (float float float float))
   (define-function void glScaled (double double double))
@@ -2042,7 +2077,27 @@
   (define-function void glVertexPointer (int int int void*))
   (define-function void glViewport (int int int int))
 
+;; GL_ARB_VERTEX_OBJECT
+  
+  (define GL_ARB_vertex_array_object 1)
 
+  (define GL_VERTEX_ARRAY_BINDING #x85B5)
+
+;;typedef void (GLAPIENTRY * PFNGLBINDVERTEXARRAYPROC) (GLuint array);
+;;typedef void (GLAPIENTRY * PFNGLDELETEVERTEXARRAYSPROC) (GLsizei n, const GLuint* arrays);
+;;typedef void (GLAPIENTRY * PFNGLGENVERTEXARRAYSPROC) (GLsizei n, GLuint* arrays);
+;;typedef GLboolean (GLAPIENTRY * PFNGLISVERTEXARRAYPROC) (GLuint array);
+
+  (define-function void glBindVertexArray (GLuint))
+  ;;#define glDeleteVertexArrays GLEW_GET_FUN(__glewDeleteVertexArrays)
+  (define-function void glGenVertexArrays (GLsizei  (* GLuint)))
+;;#define glIsVertexArray GLEW_GET_FUN(__glewIsVertexArray)
+
+;;#define GLEW_ARB_vertex_array_object GLEW_GET_VAR(__GLEW_ARB_vertex_array_object)
+
+;;#endif /* GL_ARB_vertex_array_object */
+
+  
   ;; GL_ARB_Imaging
   (define GL_ARB_imaging 1)
 
@@ -2215,7 +2270,7 @@
   (define GL_STENCIL_BACK_VALUE_MASK #x8CA4)
   (define GL_STENCIL_BACK_WRITEMASK #x8CA5)
 
-  (define-function void glAttachShader (int))
+  (define-function void glAttachShader (int int))
   (define-function void glBindAttribLocation (int int string))
   (define-function void glBlendEquationSeparate (int int))
   (define-function void glCompileShader (int))
@@ -2245,8 +2300,8 @@
   ;; (define-function glGetVertexAttribiv GLEW_GET_FUN(__glewGetVertexAttribiv))
   ;; (define-function glIsProgram GLEW_GET_FUN(__glewIsProgram))
   ;; (define-function glIsShader GLEW_GET_FUN(__glewIsShader))
-  ;; (define-function glLinkProgram GLEW_GET_FUN(__glewLinkProgram))
-  ;; (define-function glShaderSource GLEW_GET_FUN(__glewShaderSource))
+  (define-function void glLinkProgram (int))
+  (define-function void glShaderSource (int int string int))
   ;; (define-function glStencilFuncSeparate GLEW_GET_FUN(__glewStencilFuncSeparate))
   ;; (define-function glStencilMaskSeparate GLEW_GET_FUN(__glewStencilMaskSeparate))
   ;; (define-function glStencilOpSeparate GLEW_GET_FUN(__glewStencilOpSeparate))
@@ -2269,7 +2324,7 @@
   ;; (define-function glUniformMatrix2fv GLEW_GET_FUN(__glewUniformMatrix2fv))
   ;; (define-function glUniformMatrix3fv GLEW_GET_FUN(__glewUniformMatrix3fv))
   ;; (define-function glUniformMatrix4fv GLEW_GET_FUN(__glewUniformMatrix4fv))
-  ;; (define-function glUseProgram GLEW_GET_FUN(__glewUseProgram))
+  (define-function void glUseProgram (GLuint))
   ;; (define-function glValidateProgram GLEW_GET_FUN(__glewValidateProgram))
   ;; (define-function glVertexAttrib1d GLEW_GET_FUN(__glewVertexAttrib1d))
   ;; (define-function glVertexAttrib1dv GLEW_GET_FUN(__glewVertexAttrib1dv))
